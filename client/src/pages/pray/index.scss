@@ -1,0 +1,87 @@
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .br{
+        height: 4px;
+        background-color: #ce6800;
+        flex-grow: 1;
+        width: 100%;
+    }
+    .pray-img{
+        position: relative;
+        max-width: 378px;
+        img{
+            width: 100%;
+            object-fit: cover;
+            
+        }
+        .logo-img{
+            position: absolute;
+            width: 9rem;
+            height: 9rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 16%;
+            background-color: #fff;
+            @media (max-width:400px) {
+                top: 17%;
+                width: 7rem;
+                height: 7rem;
+            }
+            @media (max-width:375px) {
+                top: 17%;
+                width: 7rem;
+                height: 7rem;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .pray-form{
+        margin-top: 10px;
+        max-width: 378px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input{
+            display: block;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        textarea{
+            display: block;
+            width: 100%;
+            padding-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-left: 10px;
+
+        }
+        button{
+            text-transform: uppercase;
+            border: none;
+            background-color: #ce6800;
+            color: #fff;
+            padding: 10px ;
+            border-radius: 5px;
+            max-width: 140px;
+            margin-top: 10px;
+            font-weight: 600;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
